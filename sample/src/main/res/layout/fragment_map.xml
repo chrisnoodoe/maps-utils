@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="viewModel" type="com.noodoe.map.demo.ui.MapViewModel"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/map_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.google.android.gms.maps.MapView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cameraBearing="0.0"
+                app:cameraTargetLat="37.425842"
+                app:cameraTargetLng="-122.079933"
+                app:cameraTilt="0"
+                app:cameraZoom="16.4"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
